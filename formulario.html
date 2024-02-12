@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styleformulario.css">
+    <link rel="shortcut icon" href="img/Pepsi_2023.svg.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-izquerda">
+            <img class="nav-pepsi" src="img/Pepsi_2023.svg.png" alt="">
+        </nav>
+        <nav class="nav-derecha">
+            <a href="#">Sign Up</a>
+            <a href="#">Product Locator</a>
+            <a href="#">PepsiCo Product Facts</a>
+            <!--Puede volver desde aqui-->
+            <a href="index.html">Pepsi.com</a>
+            <a href="#">USA</a>
+        </nav>
+    </header>
+    <h1>Formulario de Contacto</h1>
+    <form action="procesar_formulario.php" method="post">
+        <!-- Campo de Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+
+        <!-- Campo de Correo Electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+
+        <!-- Campo de Teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <br>
+
+        <!-- Campo de Mensaje -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <br>
+
+        <!-- Botón de Envío -->
+        <input class="boton" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
